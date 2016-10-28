@@ -35,7 +35,7 @@ node {
    // sh "sudo ./mvnw sonar:sonar -Dsonar.host.url=http://ec2-52-23-166-207.compute-1.amazonaws.com/sonar"
 
     stage 'deploy'
-    sh "scp target/*.war ubuntu@10.150.1.206:attendance.war"
-    sh "ssh ubuntu@10.150.1.206 'java -jar attendance.war'"
+    sh "scp target/*.war attendance:attendance.war"
+    sh "ssh attendance 'java -jar attendance.war'"
    
 }
