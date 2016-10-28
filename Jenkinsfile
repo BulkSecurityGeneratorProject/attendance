@@ -5,6 +5,7 @@ node {
     env.PATH = "${nodeHome}/bin:${env.PATH}"
 
     stage 'check tools'
+    sh "whoami"
     sh "node -v"
     sh "npm -v"
 
