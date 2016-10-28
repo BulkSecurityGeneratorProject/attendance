@@ -36,6 +36,6 @@ node {
 
     stage 'deploy'
     sh "scp target/*.war ubuntu@10.150.1.206:attendance.war"
-    sh "ssh ubuntu@10.150.1.206 'java -jar attendance.war'
+    sh "ssh ubuntu@10.150.1.206 'java -jar attendance.war'"
    
 }
