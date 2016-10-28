@@ -34,7 +34,7 @@ node {
    // stage 'sonar analysis'
    // sh "sudo ./mvnw sonar:sonar -Dsonar.host.url=http://ec2-52-23-166-207.compute-1.amazonaws.com/sonar"
 
-    stage 'deploy'
+   // stage 'deploy'
     //sh "scp target/*.original tomcat:/home/bitnami/stack/apache-tomcat/webapps/devops.war"
     //sh "ssh owner 'sudo /home/bitnami/stack/ctlscript.sh restart tomcat'"
 }
