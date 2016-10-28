@@ -35,8 +35,8 @@ node {
    // stage 'sonar analysis'
     sh "sudo ./mvnw sonar:sonar -Dsonar.host.url=http://10.150.4.31:9000"
 
-    stage 'deploy'
-    sh "scp -i ~/.ssh/Develop.pem target/*.war ubuntu@10.150.1.169:attendance.war"
-    sh "ssh -i ~/.ssh/Develop.pem ubuntu@10.150.1.169 'java -jar attendance.war'"
+   // stage 'deploy'
+   // sh "scp -i ~/.ssh/Develop.pem target/*.war ubuntu@10.150.1.169:attendance.war"
+   // sh "ssh -i ~/.ssh/Develop.pem ubuntu@10.150.1.169 'java -jar attendance.war'"
    
 }
