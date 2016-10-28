@@ -29,7 +29,7 @@ node {
     sh "gulp test"
 
     stage 'package'
-    sh "./mvnw -Pprod  -Dmaven.tests.skip=true package"
+    sh "./mvnw -Dmaven.tests.skip=true package"
 
 
    // stage 'sonar analysis'
