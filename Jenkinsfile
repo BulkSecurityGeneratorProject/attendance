@@ -37,6 +37,6 @@ node {
 
     stage 'deploy'
     sh "scp -i ~/.ssh/Develop.pem target/*.war ubuntu@10.150.1.169:attendance.war"
-    //sh "ssh attendance 'java -jar attendance.war'"
+    sh "ssh -i ~/.ssh/Develop.pem ubuntu@10.150.1.169 'java -jar attendance.war'"
    
 }
